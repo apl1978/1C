@@ -132,3 +132,83 @@
 	ЗагрузкаНаСервере();
 	Предупреждение("Загрузка завершена");
 КонецПроцедуры
+
+// исходные данные - примеры файла HTML, JSON и разбор ссылки на картинку:
+//<div class="wpProQuiz_question" style="margin: 10px 0 0 0;">
+//	<div class="wpProQuiz_question_text">
+//		<p>02.14 Для партнера не определены цены, по которым ему отгружается товар. Какой вид цен будет установлен по умолчанию при выборе партнера в документе &#171;Реализация товаров и услуг&#187;?</p>
+//	</div>
+//	<ul class="wpProQuiz_questionList" data-question_id="1950" data-type="single">
+//														
+//		<li class="wpProQuiz_questionListItem" data-pos="0">
+//								
+//																								<span ></span>
+//			<label>
+//				<input class="wpProQuiz_questionInput" type="radio" name="question_149_1950" value="1"> Будет установлен вид цен "Оптовая" при продаже с оптового склада и вид цен "Розничная" при продаже товаров с розничного склада.									</label>
+//							
+//		</li> 
+//						 								
+//		<li class="wpProQuiz_questionListItem" data-pos="1">
+//								
+//																								<span ></span>
+//			<label>
+//				<input class="wpProQuiz_questionInput" type="radio" name="question_149_1950" value="2"> Будет установлен тот вид цен, который указан для пользователя, как основной тип цен продажи.									</label>
+//							
+//		</li> 
+//						 								
+//		<li class="wpProQuiz_questionListItem" data-pos="2">
+//								
+//																								<span ></span>
+//			<label>
+//				<input class="wpProQuiz_questionInput" type="radio" name="question_149_1950" value="3"> Значения вида цены в документе заполнено не будет.									</label>
+//							
+//		</li> 
+//	</ul>
+//</div>
+
+
+//<script type="text/javascript">
+//		jQuery(document).ready(function($) {
+//			$('#wpProQuiz_149').wpProQuizFront({
+//				quizId: 149,
+//				mode: 1,
+//				globalPoints: 14,
+//				timelimit: 0,
+//				resultsGrade: [0],
+//				bo: 6016,
+//				qpp: 0,
+//				catPoints: [14],
+//				formPos: 0,
+//				lbn: "\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c \u0442\u0435\u0441\u0442",
+//				json: {"1937":{"type":"single","id":1937,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},"1938":{"type":"single","id":1938,"catId":0,"points":1,"correct":[0,0,0,1]},"1939":{"type":"single","id":1939,"catId":0,"points":1,"correct":[0,1,0]},"1940":{"type":"single","id":1940,"catId":0,"points":1,"correct":[0,1,0,0]},"1941":{"type":"single","id":1941,"catId":0,"points":1,"correct":[0,0,0,0,1]},"1942":{"type":"single","id":1942,"catId":0,"points":1,"correct":[0,1,0,0]},"1943":{"type":"single","id":1943,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},"1944":{"type":"single","id":1944,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},"1945":{"type":"single","id":1945,"catId":0,"points":1,"correct":[0,0,0,0,1]},"1946":{"type":"single","id":1946,"catId":0,"points":1,"correct":[0,0,0,0,1]},"1947":{"type":"single","id":1947,"catId":0,"points":1,"correct":[0,0,0,0,1,0]},"1948":{"type":"single","id":1948,"catId":0,"points":1,"correct":[1,0,0,0,0]},"1949":{"type":"single","id":1949,"catId":0,"points":1,"correct":[0,0,0,0,1]},"1950":{"type":"single","id":1950,"catId":0,"points":1,"correct":[0,0,1]}}			});
+//		});
+//		</script>
+
+
+//{
+//"1937":{"type":"single","id":1937,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},
+//"1938":{"type":"single","id":1938,"catId":0,"points":1,"correct":[0,0,0,1]},
+//"1939":{"type":"single","id":1939,"catId":0,"points":1,"correct":[0,1,0]},
+//"1940":{"type":"single","id":1940,"catId":0,"points":1,"correct":[0,1,0,0]},
+//"1941":{"type":"single","id":1941,"catId":0,"points":1,"correct":[0,0,0,0,1]},
+//"1942":{"type":"single","id":1942,"catId":0,"points":1,"correct":[0,1,0,0]},
+//"1943":{"type":"single","id":1943,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},
+//"1944":{"type":"single","id":1944,"catId":0,"points":1,"correct":[0,0,0,0,0,1]},
+//"1945":{"type":"single","id":1945,"catId":0,"points":1,"correct":[0,0,0,0,1]},
+//"1946":{"type":"single","id":1946,"catId":0,"points":1,"correct":[0,0,0,0,1]},
+//"1947":{"type":"single","id":1947,"catId":0,"points":1,"correct":[0,0,0,0,1,0]},
+//"1948":{"type":"single","id":1948,"catId":0,"points":1,"correct":[1,0,0,0,0]},
+//"1949":{"type":"single","id":1949,"catId":0,"points":1,"correct":[0,0,0,0,1]},
+//"1950":{"type":"single","id":1950,"catId":0,"points":1,"correct":[0,0,1]}
+//}
+
+
+/// рисунки
+//вопрос, содержащий рисунок:
+//<div class="wpProQuiz_question_text">
+//	<p>10.027 На рисунке представлена:</p>
+//	<p><a href="/wp-content/uploads/2015/08/Platforma_10-27.png" rel="lightbox[819]"><img class=" size-full aligncenter" src="/wp-content/uploads/2015/08/Platforma_10-27.png" alt="10-27" /></a></p>
+//</div>
+//тогда полная ссылка на рисунок будет:
+//http://1-exam.ru/wp-content/uploads/2015/08/Platforma_10-27.png
+//то-есть к перед href или src надо дописать "http://1-exam.ru"
